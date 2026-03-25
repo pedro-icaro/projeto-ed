@@ -144,20 +144,6 @@ export default function Header({ titulo }) {
               </div>
             ))}
           </div>
-          {rota === "/home" &&
-          <div>
-          <section className="p-8 overflow-y-auto">
-            <h1 className="text-2xl font-bold">Recomendados</h1>
-          </section>
-          <div className="flex gap-15 p-5">
-            {paginalivros.map((livro)=>(
-              <div>
-                <Image src={livro.capa} alt="" width={220} height={300} id="3"/>
-              </div>
-            ))} 
-          </div>
-          </div>
-          }
         </main>
       </div>
     </>

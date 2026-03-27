@@ -19,34 +19,38 @@ export default function CadastreSe() {
           <center>
             <FaUser size="40px" />
           </center>
-          <input
-            type="text"
-            placeholder="Usuario"
-            name="usuario"
-            className="p-2 focus:ring-4 focus:ring-blue-200/50 focus:border-blue-400
-                     border-olive-300 border-2 outline-none rounded-[5px]"
-          />
-          <input
-            type="password"
-            name="senha"
-            placeholder="Senha"
-            className="p-2 outline-none border-olive-300 border-2 
-                    rounded-[5px] focus:ring-4 focus:border-blue-400
-                     focus:ring-blue-200/50"
-          />
-          <input 
-          type="email" 
-          name="" 
-          id="" 
-          placeholder="Email"
-          className="outline-none border-2 border-olive-300 p-2 rounded focus:ring-4 focus:border-blue-400 focus:ring-blue-200/50"/>
+          <form action="cadastro.php" method="POST" className = "">
+            <input
+              type="text"
+              placeholder="Usuario"
+              name="usuario"
+              className="p-2 focus:ring-4 focus:ring-blue-200/50 focus:border-blue-400
+                      border-olive-300 border-2 outline-none rounded-[5px]"
+              required        
+            />
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              className="p-2 outline-none border-olive-300 border-2 
+                      rounded-[5px] focus:ring-4 focus:border-blue-400
+                      focus:ring-blue-200/50"
+              required        
+            />
+            <input 
+            type="email" 
+            name="" 
+            id="" 
+            placeholder="Email"
+            className="outline-none border-2 border-olive-300 p-2 rounded focus:ring-4 focus:border-blue-400 focus:ring-blue-200/50"
+            required/>
 
-          <button
-            className=" bg-blue-500 p-1 rounded-2xl text-[18px] font-semibold text-white"
-            onClick={home}
-          >
-            Cadastre-se
-          </button>
+            <button
+              className=" bg-blue-500 p-1 rounded-2xl text-[18px] font-semibold text-white"
+            >
+              Cadastre-se
+            </button>
+          </form>  
         </div>
       </div>
     </>

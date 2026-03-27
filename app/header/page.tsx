@@ -142,12 +142,22 @@ export default function Header({ titulo, titulo2, image1, image2, image3,image4 
             <h1 className="text-2xl font-bold">{titulo}</h1>
           </section>
           <div className="p-5 gap-15 flex " >
-            <div className="p-1 hover:border-blue-300/50 border-2 border-transparent rounded-2xl transition-all">
+            <div className="p-1 hover:border-blue-300/50 border-2 border-transparent rounded-2xl transition-all justify-center flex items-center flex-col gap-1">
               <Image src={image1} alt="" width={220} height={300} className="rounded-[5px]"/>
+              <h1 className="font-bold text-3xl ">Invincible</h1>
+              <p className="font-semibold">A venda</p>
             </div>
-              
-              <Image src={image2} alt="" width={220} height={300} className="rounded-[5px]"/>
-              <Image src={image3} alt="" width={220} height={300} className="rounded-[5px]"/>
+              <div className="p-1 hover:border-blue-300/50 border-2 border-transparent rounded-2xl transition-all justify-center flex items-center flex-col gap-1">
+                <Image src={image2} alt="" width={220} height={300} className="rounded-[5px]"/>
+                <h1 className="font-bold text-2xl ">Homem Aranha</h1>
+                <p className="font-semibold">Doação</p>
+              </div>
+              <div className="p-1 hover:border-blue-300/50 border-2 border-transparent rounded-2xl transition-all justify-center flex items-center flex-col gap-1"> 
+                <Image src={image3} alt="" width={220} height={300} className="rounded-[5px]"/>
+                <h1 className="font-bold text-2xl ">Harry Potter</h1>
+                <p className="font-semibold">Emprestar</p>
+              </div>
+             
           </div>
           <section>
             <h1 className="font-bold text-2xl p-8">{titulo2}</h1>

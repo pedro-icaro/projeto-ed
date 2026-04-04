@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaSearch, FaUserCircle } from "react-icons/fa";
+import { FaCode, FaSearch, FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import {
   MdOutlineGroups,
@@ -13,6 +13,8 @@ import { BiHome, BiSolidBookHeart } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import { CgHome } from "react-icons/cg";
+import { MdOutlineSavings } from "react-icons/md";
+import { HiOutlineInformationCircle } from "react-icons/hi";
 
 export default function Header() {
   const rota = usePathname();
@@ -21,18 +23,13 @@ export default function Header() {
     <>
       <div className="grid grid-cols-[100px_1fr] h-screen w-screen overflow-hidden">
         <aside className=" bg-olive-200 flex flex-col ">
-          <div className="flex justify-center">
-            <a href="/home">
-              <Image
-                src="/logo1.png"
-                alt=""
-                width={120}
-                height={50}
-                className=""
-              />
+          <div className="">
+            <a href="/home" className="flex flex-col mt-4 justify-center items-center">
+            <FaCode size={40}/>
+            <h1 className=" font-semibold">DevPro</h1>
             </a>
           </div>
-          <nav className="flex flex-col gap-5 p-10 flex-none items-center justify-center mt-10">
+          <nav className="flex flex-col gap-5 p-10 flex-none items-center justify-center mt-30">
             <li
               className={
                 rota === "/home"
@@ -52,7 +49,7 @@ export default function Header() {
               }
             >
               <Link href="/emprestar">
-                <MdOutlineHandshake size={26} />
+                <MdOutlineSavings size={26}/>
               </Link>
             </li>
             <li
@@ -62,8 +59,9 @@ export default function Header() {
                   : "flex items-center gap-2 p-1"
               }
             >
+              {}
               <Link href="/doar">
-                <BiSolidBookHeart size={26} />
+                <HiOutlineInformationCircle size={26}/>
               </Link>
             </li>
             <li
@@ -72,7 +70,7 @@ export default function Header() {
                   ? "bg-olive-300 flex items-center p-3 gap-2 w-[50] rounded-full "
                   : "flex items-center gap-2 p-1"
               }
-            >
+            >{/* 
               <Link href="/vender">
                 {" "}
                 <MdOutlineLocalOffer size={26} />
@@ -95,7 +93,8 @@ export default function Header() {
                   ? "bg-olive-300 flex items-center p-1 gap-2 w-[160] rounded-2xl "
                   : "flex items-center p-1 gap-2"
               }
-            ></li>
+            >*/}
+            </li>
           </nav>
           
         </aside>
@@ -125,15 +124,7 @@ export default function Header() {
             </div>
           </header>
           <div className="flex-1 overflow-y-auto">
-          <section className="p-8 ">
-            <h1 className="text-2xl font-bold">Adicionados Recente</h1>
-          </section>
-          <div className="p-5 gap-15 flex " >
 
-          </div>
-          <section>
-            <h1 className="font-bold text-2xl p-8">Recomendados</h1>
-          </section>
           </div>
         </main>
       </div>

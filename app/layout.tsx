@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./header/page";
+import Navbar from "./navbar/page";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,12 +13,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-col flex-1">
-          <Header />
-          <main className="flex-1 overflow-y-auto p-6">{children}</main>
+        <div className="grid grid-cols-[100px_1fr] h-screen w-screen overflow-hidden">
+          <aside className=" bg-olive-200 flex flex-col ">
+            <Navbar />
+          </aside>
+          <main className="flex flex-col h-full overflow-hidden">
+            <header>
+              <Header />
+            </header>
+            <div className="flex-1 overflow-y-auto flex-nowrap p-5">
+              {children}
+            </div>
+          </main>
         </div>
       </body>
     </html>

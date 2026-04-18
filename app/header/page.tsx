@@ -3,10 +3,10 @@ import { FaSearch, FaUserCircle } from "react-icons/fa";
 export default function Header(){
   return(
     <>
-                  <div className="bg-olive-200 flex p-5 items-center">
+                  <div className="md:bg-olive-200 flex p-5 items-center">
                     <div
                       className="flex items-center border-2 rounded-[15px]
-                border-olive-300 gap-5 p-1 w-[500]"
+                border-olive-300 gap-5 p-1 md:w-[500]"
                     >
                       <FaSearch
                         size="20px"
@@ -22,7 +22,7 @@ export default function Header(){
     
                     <div className=" flex-1 flex gap-3 items-center justify-end overflow-y-auto">
                       <FaUserCircle size="40px" className=" " />
-                      <span>User Name</span>
+                      <span className=" hidden md:block">User Name</span>
                     </div>
                   </div>
     </>

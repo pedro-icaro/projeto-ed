@@ -13,13 +13,14 @@ import { CgHome } from "react-icons/cg";
 import { IoLogoFigma } from "react-icons/io5";
 import { SiJavascript } from "react-icons/si";
 import { usePathname } from "next/navigation";
+import { HiOutlinePresentationChartLine } from "react-icons/hi";
 
 export default function Navbar() {
   const rota = usePathname();
 
   return (
     <>
-      <div>
+      <div className="hidden md:block">
         <a
           href="/home"
           className="flex flex-col mt-4 justify-center items-center"
@@ -28,18 +29,8 @@ export default function Navbar() {
           <h1 className=" font-semibold">DevPro</h1>
         </a>
       </div>
-      <nav className="flex flex-col gap-5  flex-none items-center justify-center min-h-[70%]">
-        <li
-          className={
-            rota === "/home"
-              ? "bg-olive-300 flex items-center p-3 rounded-full w-[50]"
-              : "gap-2 p-1 flex items-center"
-          }
-        >
-          <Link href="/home">
-            <CgHome size={26} />
-          </Link>
-        </li>
+      <nav className="flex md:flex-col gap-5  flex-none items-center justify-center min-h-[70%]">
+
         <li
           className={
             rota === "/vender"
@@ -76,6 +67,17 @@ export default function Navbar() {
         </li>
         <li
           className={
+            rota === "/home"
+              ? "bg-olive-300 flex items-center p-3 rounded-full w-[50] mt-[-20] "
+              : "gap-2 p-1 flex items-center"
+          }
+        >
+          <Link href="/home">
+            <CgHome size={26} />
+          </Link>
+        </li>        
+        <li
+          className={
             rota === "/comprar"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
@@ -94,6 +96,17 @@ export default function Navbar() {
         >
           <Link href="/comprar">
             <FaReact size={26} />
+          </Link>
+        </li>
+        <li
+          className={
+            rota === "/comprar"
+              ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
+              : "flex items-center p-1 gap-2"
+          }
+        >
+          <Link href="/comprar">
+            <HiOutlinePresentationChartLine size={28} />
           </Link>
         </li>
       </nav>

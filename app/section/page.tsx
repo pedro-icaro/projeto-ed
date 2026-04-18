@@ -4,7 +4,7 @@ export default function section() {
   return (
     <>
     <section>
-      <div className="flex gap-3 relative overflow-hidden">
+      <div className="flex gap-3 relative overflow-hidden overflow-x-auto">
         <div>
           <Card
             capa="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"

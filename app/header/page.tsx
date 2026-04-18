@@ -1,9 +1,13 @@
 import { FaSearch, FaUserCircle } from "react-icons/fa";
+import Logo from "../logo/page";
 
 export default function Header(){
   return(
     <>
-                  <div className="md:bg-olive-200 flex p-5 items-center">
+                  <div className="md:bg-olive-200 flex p-5 items-center gap-5 h-20">
+                    <div className=" block md:hidden">
+                      <Logo/>
+                    </div>
                     <div
                       className="flex items-center border-2 rounded-[15px]
                 border-olive-300 gap-5 p-1 md:w-[500]"

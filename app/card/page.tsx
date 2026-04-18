@@ -8,7 +8,7 @@ interface propscards{
 export default function card({titulocard,descricao,capa}: propscards){
     return(
         <>
-        <div className="line-clamp-4 hover:bg-olive-200 transition-all w-100
+        <div className=" hover:bg-olive-200 transition-all w-80 md:w-100 
          duration-200 hover:mt-[-2] ease-in-out p-1.5 rounded-2xl">
             <Image
              alt=""
@@ -20,7 +20,7 @@ export default function card({titulocard,descricao,capa}: propscards){
              <h1 className="font-bold text-2xl">
                 {titulocard}
              </h1>
-             <p>
+             <p className=" line-clamp-3">
                 {descricao}
              </p>
         </div>

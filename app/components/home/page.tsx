@@ -4,7 +4,7 @@ import Card from "../card/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "dev-pro",
+  title: "Dev-Pro",
 
 };
 export default function home() {

@@ -4,7 +4,7 @@ import Header from "./components/header/page";
 import Navbar from "./components/navbar/page";
 
 export const metadata: Metadata = {
-  title: '',
+  title: 'Dev-Pro',
 };
 
 export default function RootLayout({

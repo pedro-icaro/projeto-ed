@@ -2,21 +2,20 @@
 
 import { useState } from "react";
 import { FaShareNodes } from "react-icons/fa6";
+import Compartilhar from "./botao-compartilhar/page";
 
 export default function Headercurso() {
   const [x, setx] = useState(0);
-  const [b ,setb] = useState("mais")
+  const [b, setb] = useState("mais");
 
   function vermais() {
-    setx(x+1)
-    setb("menos")
-if (x === 1 ){
-    setx(0)
-    setb("mais")
-}
-else{
-
-}
+    setx(x + 1);
+    setb("menos");
+    if (x === 1) {
+      setx(0);
+      setb("mais");
+    } else {
+    }
   }
 
   return (
@@ -34,10 +33,12 @@ else{
       </button>
 
       <div className="flex gap-2 items-center">
-        <button className="flex py-2 px-4 rounded-3xl bg-olive-200 items-center gap-2">
-          <FaShareNodes />
-          Compartilha
-        </button>
+        <Compartilhar title = "Copie o conteúdo:" content = "Conteúdo">
+          <button className="flex py-2 px-4 rounded-3xl bg-olive-200 items-center gap-2 outline-none">
+            <FaShareNodes />
+            Compartilha
+          </button>
+        </Compartilhar>
         <span>40 Aulas</span>
       </div>
     </div>

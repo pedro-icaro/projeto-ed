@@ -1,7 +1,8 @@
 "use client";
 
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import { MdContentCopy } from "react-icons/md";
+import { useState } from "react";
+import { MdCheck, MdContentCopy } from "react-icons/md";
 
 interface ComparProps {
     title:string;
@@ -10,6 +11,13 @@ interface ComparProps {
 }
 
 export default function Compartilhar({title, content, children}: ComparProps){
+   
+    const [copiado,setcopiado] = useState(false)
+   const textocopiado = () => {
+    setcopiado(true)
+    window.navigator.clipboard.writeText(content)
+   }
+
     return(
         <DropdownMenu.Root>
             <DropdownMenu.Trigger>
@@ -26,11 +34,12 @@ export default function Compartilhar({title, content, children}: ComparProps){
                         value={content}
                         readOnly
                         className=" bg-olive-400 p-1 px-2 rounded outline-olive-500"
+                        autoFocus
                         onFocus={e => e.target.select()}
                         />
 
-                        <button>
-                            <MdContentCopy />
+                        <button onClick={textocopiado}>
+                           {copiado === true ? <MdCheck/> : <MdContentCopy />} 
                         </button>
                     </div>
                 </DropdownMenu.Content>

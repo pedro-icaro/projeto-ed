@@ -33,8 +33,11 @@ export default function Headercurso() {
       </button>
 
       <div className="flex gap-2 items-center">
-        <Compartilhar title = "Copie o conteúdo:" content = "Conteúdo">
-          <button className="flex py-2 px-4 rounded-3xl bg-olive-200 items-center gap-2 outline-none">
+        <Compartilhar title = "Copie o conteúdo:" content = "https://github.com/pedro-icaro/BestCursos-Next.js">
+          <button 
+          className="flex py-2 px-4 rounded-3xl bg-olive-200 items-center 
+          gap-2 outline-none"
+          >
             <FaShareNodes />
             Compartilha
           </button>

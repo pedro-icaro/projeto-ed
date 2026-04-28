@@ -14,7 +14,7 @@ export default function Headercurso() {
     if (x === 1) {
       setx(0);
       setb("mais");
-    } else {
+    } else { 
     }
   }
 

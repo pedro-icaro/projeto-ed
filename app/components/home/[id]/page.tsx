@@ -1,3 +1,4 @@
+
 import { Metadata } from "next";
 import { title } from "process";
 import Headercurso from "../../header-curso/page";
@@ -16,10 +17,21 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function Detalhescursos({ params }: Props) {
   const { id } = await params;
+
   return (
     <>
       <div className="flex flex-col gap-5">
-        <Iniciarcurso idClass="1" idCurso="1" imagemUrl="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"/>
+        <Iniciarcurso
+        title="Curso de HTML5 Completo e GRÁTIS"
+          idClass="1"
+          idCurso="1"
+          imagemUrl="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"
+        />
+        <Headercurso />
+        <Headercurso />
+        <Headercurso />
+        <Headercurso />
+        <Headercurso />
         <Headercurso />
       </div>
     </>

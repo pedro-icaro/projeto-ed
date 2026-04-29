@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { title } from "process";
 import Headercurso from "../../header-curso/page";
 import Iniciarcurso from "../../iniciarcurso/page";
+import Aulas from "../../conteudo-das-aulas/Aulas";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -30,11 +31,10 @@ export default async function Detalhescursos({ params }: Props) {
         </div>
         <div className="flex-1">
           <Headercurso />
-          <Headercurso />
-          <Headercurso />
-          <Headercurso />
-          <Headercurso />
-          <Headercurso />
+          <Aulas 
+          title="Curso de HTML5 - 00 - Site Completo - by Gustavo Guanabara"
+          playerUrl="/player/{cursoId}/{classId}"
+          />
         </div>
       </div>
     </>

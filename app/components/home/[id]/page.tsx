@@ -1,4 +1,3 @@
-
 import { Metadata } from "next";
 import { title } from "process";
 import Headercurso from "../../header-curso/page";
@@ -20,19 +19,23 @@ export default async function Detalhescursos({ params }: Props) {
 
   return (
     <>
-      <div className="flex flex-col gap-5">
-        <Iniciarcurso
-        title="Curso de HTML5 Completo e GRÁTIS"
-          idClass="1"
-          idCurso="1"
-          imagemUrl="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"
-        />
-        <Headercurso />
-        <Headercurso />
-        <Headercurso />
-        <Headercurso />
-        <Headercurso />
-        <Headercurso />
+      <div className="flex flex-col md:flex-row-reverse gap-5 md:gap-5 md:w-auto left-0">
+        <div className="flex-1">
+          <Iniciarcurso
+            title="Curso de HTML5 Completo e GRÁTIS"
+            idClass="1"
+            idCurso="1"
+            imagemUrl="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"
+          />
+        </div>
+        <div className="flex-1">
+          <Headercurso />
+          <Headercurso />
+          <Headercurso />
+          <Headercurso />
+          <Headercurso />
+          <Headercurso />
+        </div>
       </div>
     </>
   );

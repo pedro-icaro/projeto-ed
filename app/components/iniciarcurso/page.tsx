@@ -15,7 +15,7 @@ export default function Iniciarcurso({idClass, idCurso, imagemUrl,title}:Iniciar
   const [ref, InView] = useInView({threshold: 0.1, initialInView: true });
   return (
     <>
-    <div ref={ref} className=" bg-olive-200 p-5 rounded-[8] flex flex-col gap-5 md:w-150">
+    <div ref={ref} className=" bg-olive-200 p-5 rounded-[8] flex flex-col gap-5 md:w-100 md:fixed">
       <Link href={`/player/${idCurso}/${idClass}`} style={{backgroundImage: `url(${imagemUrl})` }}
       className="w-full bg-cover bg-no-repeat aspect-video bg-center rounded"
       >

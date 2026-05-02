@@ -14,6 +14,7 @@ import { IoLogoFigma } from "react-icons/io5";
 import { SiJavascript } from "react-icons/si";
 import { usePathname } from "next/navigation";
 import { HiOutlinePresentationChartLine } from "react-icons/hi";
+import { IoMdTrendingUp } from "react-icons/io";
 
 export default function Navbar() {
   const rota = usePathname();
@@ -37,11 +38,13 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2 w-[50] rounded-full "
               : "flex items-center gap-2 p-1"
           }
-        >
+        ><span>
           <Link href="/html5">
             {" "}
             <FaHtml5 size={26} />
+            
           </Link>
+          </span>
         </li>
         <li
           className={
@@ -49,10 +52,10 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
           }
-        >
+        ><span>
           <Link href="/css3">
             <FaCss3Alt size={26} />
-          </Link>
+          </Link></span>
         </li>
         <li
           className={
@@ -60,10 +63,10 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
           }
-        >
+        ><span>
           <Link href="/javascriptt">
             <SiJavascript size={22} />
-          </Link>
+          </Link></span>
         </li>
         <li
           className={
@@ -71,10 +74,12 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 rounded-full w-[50]  "
               : "gap-2 p-1 flex items-center"
           }
-        >
+        ><span>
+
+        
           <Link href="/components/home">
             <CgHome size={26} />
-          </Link>
+          </Link></span>
         </li>        
         <li
           className={
@@ -82,10 +87,10 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
           }
-        >
+        ><span>
           <Link href="/figma">
             <IoLogoFigma size={26} />
-          </Link>
+          </Link></span>
         </li>
         <li
           className={
@@ -93,10 +98,12 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
           }
-        >
+        ><span>
+
+        
           <Link href="/react">
             <FaReact size={26} />
-          </Link>
+          </Link></span>
         </li>
         <li
           className={
@@ -104,10 +111,10 @@ export default function Navbar() {
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2"
           }
-        >
+        ><span>
           <Link href="/apoie-o-projeto">
-            <HiOutlinePresentationChartLine size={28} />
-          </Link>
+            <IoMdTrendingUp size={28}/> 
+          </Link></span>
         </li>
       </nav>
     </>

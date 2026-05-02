@@ -30,7 +30,7 @@ export default async function Detalhescursos({ params }: Props) {
             imagemUrl="https://i.ytimg.com/vi/epDCjksKMok/hqdefault.jpg"
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col gap-4">
           <Headercurso />
           <Grupodeaulas 
           title="Introdução e apresentação do curso" 

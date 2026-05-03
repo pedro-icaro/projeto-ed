@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 import { title } from "process";
-import Headercurso from "../../header-curso/page";
-import Iniciarcurso from "../../iniciarcurso/page";
-import Aulas from "../../conteudo-das-aulas/Aulas";
-import Grupodeaulas from "../../conteudo-das-aulas/Grupodeaulas";
+import Headercurso from "../../../components/header-curso/page";
+import Iniciarcurso from "../../../components/iniciarcurso/page";
+import Grupodeaulas from "../../../components/conteudo-das-aulas/Grupodeaulas";
 
 interface Props {
   params: Promise<{ id: string }>;

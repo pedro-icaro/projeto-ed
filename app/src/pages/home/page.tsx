@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Section from "../section/page";
-import Card from "../card/page";
+import Section from "../../components/section/page";
+import Card from "../../components/card/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

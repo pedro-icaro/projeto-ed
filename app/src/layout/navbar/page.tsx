@@ -70,12 +70,12 @@ export default function Navbar() {
         </li>
         <li
           className={
-            rota === "/components/home"
+            rota === "/src/pages/home"
               ? "bg-olive-300 flex items-center p-3 rounded-full w-[50]"
               : "gap-2 p-1 flex items-center hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
-          <Link href="/components/home">
+          <Link href="/src/pages/home">
             <CgHome size={26} />
           </Link></span>
         </li>        
@@ -105,12 +105,12 @@ export default function Navbar() {
         </li>
         <li
           className={
-            rota === "/apoie-o-projeto"
+            rota === "/src/pages/apoie-o-projeto"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
               : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
-          <Link href="/apoie-o-projeto">
+          <Link href="/src/pages/apoie-o-projeto">
             <IoMdTrendingUp size={28}/> 
           </Link></span>
         </li>

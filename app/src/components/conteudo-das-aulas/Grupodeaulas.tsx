@@ -24,7 +24,7 @@ export default function Grupodeaulas({ title, classes, cursoId }: AulasProps) {
           className="flex items-center gap-2 bg-olive-200 p-3 rounded"
           onClick={() => setabre(!abre)}
         >
-          {abre === true ? (
+          {abre === true ? ( 
             <MdKeyboardArrowDown size={24} />
           ) : (
             <MdKeyboardArrowRight size={24} />

@@ -35,8 +35,8 @@ export default function Navbar() {
         <li
           className={
             rota === "/html5"
-              ? "bg-olive-300 flex items-center p-3 gap-2 w-[50] rounded-full "
-              : "flex items-center gap-2 p-1"
+              ? "bg-olive-300 flex items-center p-3 gap-2 w-[50] rounded-full"
+              : "flex items-center gap-2 p-1 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
           <Link href="/html5">
@@ -50,7 +50,7 @@ export default function Navbar() {
           className={
             rota === "/css3"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
-              : "flex items-center p-1 gap-2"
+              : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
           <Link href="/css3">
@@ -61,7 +61,7 @@ export default function Navbar() {
           className={
             rota === "/javascriptt"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
-              : "flex items-center p-1 gap-2"
+              : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
           <Link href="/javascriptt">
@@ -71,12 +71,10 @@ export default function Navbar() {
         <li
           className={
             rota === "/components/home"
-              ? "bg-olive-300 flex items-center p-3 rounded-full w-[50]  "
-              : "gap-2 p-1 flex items-center"
+              ? "bg-olive-300 flex items-center p-3 rounded-full w-[50]"
+              : "gap-2 p-1 flex items-center hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
-
-        
           <Link href="/components/home">
             <CgHome size={26} />
           </Link></span>
@@ -85,7 +83,7 @@ export default function Navbar() {
           className={
             rota === "/figma"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
-              : "flex items-center p-1 gap-2"
+              : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
           <Link href="/figma">
@@ -96,7 +94,7 @@ export default function Navbar() {
           className={
             rota === "/react"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
-              : "flex items-center p-1 gap-2"
+              : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
 
@@ -109,7 +107,7 @@ export default function Navbar() {
           className={
             rota === "/apoie-o-projeto"
               ? "bg-olive-300 flex items-center p-3 gap-2  w-[50] rounded-full "
-              : "flex items-center p-1 gap-2"
+              : "flex items-center p-1 gap-2 hover:ml-[7] transition-[10s] text-lg"
           }
         ><span>
           <Link href="/apoie-o-projeto">

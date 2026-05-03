@@ -23,7 +23,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 span {
-   @apply hover:ml-[7] transition-[10s] text-lg
+   
 }
 ::-webkit-scrollbar {
   display: none;

@@ -29,7 +29,7 @@ export default function Headercurso() {
         <br /> navegadores compatíveis.
       </p>
       <button onClick={vermais} className=" w-16 underline flex gap-1">
-        <span>Ver</span>{b} 
+        <p>Ver</p>{b} 
       </button>
 
       <div className="flex gap-2 items-center">
@@ -42,7 +42,7 @@ export default function Headercurso() {
             Compartilha
           </button>
         </Compartilhar>
-        <span>40 Aulas</span>
+        <p>40 Aulas</p>
       </div>
     </div>
   );

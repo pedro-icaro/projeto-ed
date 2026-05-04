@@ -31,7 +31,7 @@ export default function Grupodeaulas({ title, classes, cursoId }: AulasProps) {
           )}
           {title}
         </button>
-        <ol className="flex flex-col">
+        <ol data-abre={abre} className="flex flex-col data-[abre=false]:hidden">
           {classes.map(({ id, title }) => (
             <li key={id}>
               <Aulas 

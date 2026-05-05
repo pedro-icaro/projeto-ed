@@ -1,4 +1,4 @@
-import Card from "../card/page";
+import Card from "../card/card";
 
 export default function section() {
   return (

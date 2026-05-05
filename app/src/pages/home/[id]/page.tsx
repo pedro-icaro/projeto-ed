@@ -3,6 +3,7 @@ import { title } from "process";
 import Headercurso from "../../../components/header-curso/page";
 import Iniciarcurso from "../../../components/iniciarcurso/page";
 import Grupodeaulas from "../../../components/conteudo-das-aulas/Grupodeaulas";
+import ConteudoDasAulas from "@/app/src/components/conteudo-das-aulas/conteudo-das-aulas";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -31,13 +32,26 @@ export default async function Detalhescursos({ params }: Props) {
         </div>
         <div className="flex-1 flex flex-col gap-4">
           <Headercurso />
-          <Grupodeaulas 
-          title="Introdução e apresentação do curso" 
-          classes={[
-            {id: "234", title:"Curso de HTML5 - 00 - Site Completo - by Gustavo Guanabara"},
-             {id: "235", title:"Curso de HTML5 - 01 - História da Internet - by Gustavo Guanabara"}
-          ]} 
-          cursoId="123" />
+          <ConteudoDasAulas
+            classgroups={[
+              {
+                cursoId: "123",
+                title: "Introdução e apresentação do curso",
+                classes: [
+                  {
+                    id: "234",
+                    title:
+                      "Curso de HTML5 - 00 - Site Completo - by Gustavo Guanabara",
+                  },
+                  {
+                    id: "235",
+                    title:
+                      "Curso de HTML5 - 01 - História da Internet - by Gustavo Guanabara",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
       </div>
     </>

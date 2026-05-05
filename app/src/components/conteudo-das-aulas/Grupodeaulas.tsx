@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import Aulas from "./Aulas";
 import { useState } from "react";
 
-interface AulasProps {
+export interface AulasProps {
   title: string;
   cursoId: string;
   classes: {
